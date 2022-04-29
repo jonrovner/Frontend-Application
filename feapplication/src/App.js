@@ -6,6 +6,7 @@ import Product from './components/Product';
 import { useDispatch, useSelector } from 'react-redux';
 import { get_config } from './redux/actions';
 import './App.css';
+import Navigation from './components/Navigation';
 
 function App() {
 
@@ -24,10 +25,14 @@ function App() {
   <div className='App'>
     
     <Header />
-    <Routes>
-      <Route exact path="/" element={<Main />} />
-      <Route path="/product/:id" element={<Product />} />
-    </Routes>
+    <section className='content'>
+      <Navigation />
+      <Routes>
+        <Route exact path="/" element={<Main />} />
+        <Route path="/product/:id" element={<Product />} />
+      </Routes>
+
+    </section>
   
   </div>   
   );
