@@ -14,17 +14,7 @@ const NavUnlisted = styled.ul`
   padding-top: 1rem;
   padding-bottom: 1rem;
  
-  @media screen and (min-width: 600px) {
-    flex-direction:column;
-    justify-content: flex-start;
-    gap:.5rem;
-    padding-top: 0;
   
-  }
-    
-  
-  
-
   ul{
     margin:0;
     padding: 0;
@@ -51,6 +41,16 @@ const NavUnlisted = styled.ul`
   .current {
     li {
       border-bottom: 2px solid black;
+    }
+  }
+  @media screen and (min-width: 600px) {
+    flex-direction:column;
+    justify-content: flex-start;
+    gap:.5rem;
+    padding-top: 0;
+    li{
+      width: 8rem;
+      text-align: center;
     }
   }
 `;

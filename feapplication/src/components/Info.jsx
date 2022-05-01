@@ -15,29 +15,34 @@ const Info = ({product}) => {
             </h3>
         </MainInfo>
     );
-}
+};
+
 const MainInfo = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-top: 2rem;
     
-    h1{
+    
+    h1{ 
         margin-bottom: 1rem;
     }
-    h3{
+    h3 {
         margin-top: 0;
     }
+    
+    
 `;
 
 const ImageContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 30vh;
     .cover {
         object-fit: cover;
         object-position: center;
-        width: 50%;
+        width: 100%;
         height: 100%;
         overflow:hidden;
     }

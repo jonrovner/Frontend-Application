@@ -2,13 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Head = styled.div`
+    
     padding-top: 0.5rem;
     width: 100vw;
     color:#272e71; 
-    display:flex;       
+    display: flex;
+    justify-content: center;
     
-    justify-content: space-evenly;
-    align-items: center;
 
     img {
         height: 1rem;
@@ -17,7 +17,7 @@ const Head = styled.div`
     @media screen and (min-width: 600px) {
         padding-bottom: 1rem;
         padding-left:1rem;
-        justify-content: flex-start;
+        justify-content: center;
   
     .img {  
       margin-left: 1rem;

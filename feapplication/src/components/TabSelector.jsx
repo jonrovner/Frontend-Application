@@ -20,6 +20,7 @@ const TabSelector = ({showDescription, setShow}) => {
 }
 
 const Tabs = styled.section`
+    
     padding-left: 1rem;
     padding-right: 1rem;
     display: flex;
@@ -29,7 +30,7 @@ const Tabs = styled.section`
 `;
 
 const TabButton = styled.button`
-    flex-grow: 1;
+    flex: 1;
     background-color: gray;
     padding:.5rem 1rem;
     color: white;
@@ -39,8 +40,7 @@ const TabButton = styled.button`
 
 const ActiveTabButton = styled.button`
    
-   flex-grow: 1;
-    width: 30vh;
+    flex: 1;
     background-color: #272e71;
     padding:.5rem 1rem;
     color: white;

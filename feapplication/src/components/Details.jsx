@@ -100,11 +100,19 @@ const Details = ({product, showDescription, setShow, saveDescription, saveList, 
     );
 }
 const EditableTLR = styled.div`
+    margin-top: 1rem;
     background-color: #272e71;
     color: white;
     padding: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
     p {
         margin-top: 1rem;
+    }
+    select{
+        width:80%
     }
     button{
         margin-bottom: 1rem;
@@ -119,11 +127,13 @@ const StyledEditText = styled(EditText)`
     text-align: justify;
     font-size: .85rem;
     flex-direction: column;
+    max-width: 30rem;
 
-    button[editext="edit-button"] {
+    button[editext="edit-button"]   {
     display: inline-block;
     align-self: flex-end;
   }
+  
   div[editext='view']{
       padding-bottom: 1rem;
   }
@@ -140,7 +150,16 @@ const StyledEditText = styled(EditText)`
         line-height: normal;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
-}
+
+ }
+ 
+ 
+    @media screen and (min-width: 600px){
+    width: 30vw;
+    }
+  
+ 
+ 
 `;
 const EditList = styled(EditableList)`
     padding-bottom: 2rem;
@@ -190,6 +209,12 @@ const ListGroup = styled.div`
    
    align-items: center;
     gap: 1.5rem;
+    @media screen and (min-width: 600px){
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        align-items: flex-start;
+    }
 
 `;
 
